@@ -21,18 +21,110 @@
     <title>Frontend Mentor | Tic Tac Toe</title>
   </head>
   <body>
-    <section>
-      <article>
-        <header>header</header>
-        <main>Game Play</main>
-        <footer>Score</footer>
-      </article>
+    <section id="welcome-screen">
+      <div class="game-play">
+        <div id="start-header">
+          <img src="/assets/icon-x.svg" />
+          <img src="/assets/icon-o.svg" />
+        </div>
+        <div id="start-selection">
+          <h2>Pick Player 1's marker</h2>
+          <div id="marker-selection">
+            <div class="selection" id="player-x">x</div>
+            <div class="selection" id="player-o">o</div>
+          </div>
+          <h3>Remember: x goes first</h3>
+        </div>
+        <button id="cpu-start" class="yellow-button" value="cpu">
+          New Game (VS CPU)
+        </button>
+        <br />
+        <button id="human-start" class="blue-button" value="human">
+          New Game(VS Player)
+        </button>
+      </div>
     </section>
+    <section id="end-game" class="modal">
+      <div id="modal-message">
+        <p id="message">oh no, you lost...</p>
+        <div id="declaration">
+          <img src="/assets/icon-o.svg" />
+          <p>Takes the round</p>
+        </div>
+        <div class="button-container">
+          <button class="silver-button" value="quit">Quit</button>
+          <button class="yellow-button" value="nextRound">Next round</button>
+        </div>
+      </div>
+    </section>
+    <section id="restart-game" class="modal">
+      <div id="modal-restart">
+        <p id="restart-message">restart game?</p>
+
+        <div class="button-container">
+          <button id="no-restart" class="silver-button" value="no">
+            No, cancel
+          </button>
+          <button id="yes-restart" class="yellow-button" value="yes">
+            yes, restart
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="cover">
+      <div class="game-play">
+        <header>
+          <div class="hf-content">
+            <div id="player-tokens">
+              <img src="/assets/icon-x.svg" />
+              <img src="/assets/icon-o.svg" />
+            </div>
+            <div class="light-navy" id="player-turn">
+              <img src="/assets/icon-x.svg" />
+              <label id="player-token"></label>turn
+            </div>
+            <div id="restart-button">
+              <img src="/assets/icon-restart.svg" />
+            </div>
+          </div>
+        </header>
+        <main>
+          <div id="main-content">
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+            <div class="light-navy tile"></div>
+          </div>
+        </main>
+        <footer>
+          <div class="hf-content">
+            <div class="score-card" id="player2">
+              <p>X (<span id="x-score">You</span>)</p>
+              <p class="score">0</p>
+            </div>
+            <div class="score-card" id="tie">
+              <p>Ties</p>
+              <p class="score">0</p>
+            </div>
+            <div class="score-card" id="player1">
+              <p>O (<span id="o-score">You</span>)</p>
+              <p class="score">0</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
