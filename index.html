@@ -62,12 +62,8 @@
         <p id="restart-message">restart game?</p>
 
         <div class="button-container">
-          <button id="no-restart" class="silver-button" value="no">
-            No, cancel
-          </button>
-          <button id="yes-restart" class="yellow-button" value="yes">
-            yes, restart
-          </button>
+          <button id="no-restart" class="silver-button">No, cancel</button>
+          <button id="yes-restart" class="yellow-button">yes, restart</button>
         </div>
       </div>
     </section>
@@ -80,8 +76,9 @@
               <img src="/assets/icon-o.svg" />
             </div>
             <div class="light-navy" id="player-turn">
-              <img src="/assets/icon-x.svg" />
-              <label id="player-token"></label>turn
+              <img id="player-token-o" src="/assets/icon-o-gray.svg" hidden />
+              <img id="player-token-x" src="/assets/icon-x-gray.svg" />
+              <span>turn</span>
             </div>
             <div id="restart-button">
               <img src="/assets/icon-restart.svg" />

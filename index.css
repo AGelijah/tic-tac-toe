@@ -121,6 +121,8 @@ button {
   align-items: center;
   border-radius: 10px;
   height: 100%;
+  font-weight: bolder;
+  font-size: 40px;
 }
 .normal {
   background-color: var(--silver);
@@ -292,6 +294,9 @@ main {
 .tile {
   box-shadow: inset 0px -8px 0px #10212a;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #player2 {
@@ -306,6 +311,23 @@ main {
 .score {
   font-size: 24px;
   margin-top: 8px;
+}
+
+.token {
+  scale: 0.7;
+}
+
+.x-outline {
+  background-image: url(/assets/icon-x-outline.svg);
+  background-repeat: no-repeat;
+  background-position: 22px 20px;
+  background-size: 3em;
+}
+.o-outline {
+  background-image: url(/assets/icon-o-outline.svg);
+  background-repeat: no-repeat;
+  background-position: 22px 20px;
+  background-size: 3em;
 }
 
 /*Tablet View */
@@ -363,5 +385,19 @@ main {
     width: 100%;
     text-align: center;
     font-size: 14px;
+  }
+  .selection {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hf-content {
+    margin-left: -20px;
+  }
+}
+@media (max-width: 320px) {
+  .hf-content {
+    margin-left: -60px;
   }
 }
